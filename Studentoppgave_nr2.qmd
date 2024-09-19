@@ -1,6 +1,6 @@
 ---
 title: "Arbeidskrav nummer 2"
-author: "Gruppe oppgave"
+author: "Ingrid, Trond, Simon og Andrine"
 format: 
   html:
     code-fold: true
@@ -325,7 +325,7 @@ Regresjonsanalysen for laktatnivået ved 225 watt mot VO2 ved 225 watt viser fø
 
 -   **F-statistik**: Med en p-verdi på 0.3296, er det ingen signifikant lineær sammenheng mellom VO2.225 og laktatnivået.
 
-#3 konklusjon
+## konklusjon
 Disse resultatene indikerer at VO2.225 ikke er en god prediktor for laktatnivået ved 225 watt. Det bør vurderes andre modeller eller variabler for å forbedre forklaringen av laktatnivået, eller å utforske alternative statistiske metoder for en mer presis analyse.
 
 ## Assignment 2
