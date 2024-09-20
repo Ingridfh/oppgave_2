@@ -1,7 +1,7 @@
 ---
 title: "Arbeidskrav nummer 2"
-author: "Ingrid, Trond, Simon og Andrine"
-format: 
+author: "Ingrid, Trond, Simon, Andrine og Erik"
+format:
   html:
     code-fold: true
     code-summary: "Vis/skjul kode"
@@ -21,23 +21,22 @@ format:
                  e.style.display = 'block';
             }
           </script>
-    echo: false  # Skjul alle koder som standard
-toc: true  # Legg til en innholdsfortegnelse
+toc: true
+message: false
+warning: false
+editor_options: 
+  chunk_output_type: console
 ---
 
+# Assignment 1
 
-## Assignment 1
-
-Introduksjon
+## Introduksjon
 
 I denne delen skal vi utforske hvordan man kan fange den fysiologiske essensen av melkesyreterskeltesten. En vanlig metode for å analysere forholdet mellom treningsintensitet og blodmelkesyre er å bestemme intensiteten ved faste blodmelkesyrenivåer. Dette kan oppnås ved å bruke en regresjonsmodell for å beskrive forholdet, og deretter utføre en "invers prediksjon" av treningsintensiteten.
 
 
 
 ```{r}
-#| warning: false
-#| message: false
-#| echo: false
 
 library(exscidata)
 library(ggplot2)
@@ -50,10 +49,6 @@ library(broom)
 
 
 ```{r}
-
-#| warning: false
-#| message: false
-#| echo: false
 
 # Laster inn datasettet fra excidata
 
@@ -74,7 +69,7 @@ cyclingstudy_filtered <- cyclingstudy %>%
 ## Kombinasjon av data for intensitet `VO2.225`og blodmelkesyre  `lac.225`
 
 
-```{r,echo=FALSE}
+```{r}
 
 model <- lm(lac.225 ~ VO2.225, data = cyclingstudy_filtered)
 summary(model)
@@ -109,7 +104,6 @@ summary(model)
 
 ```{r}
 
-install.packages("ggplot2")
 library(ggplot2)
 
 ## Scatterplot med regresjonslinje for VO2.125 og lac.125
@@ -334,6 +328,11 @@ Disse resultatene indikerer at VO2.225 ikke er en god prediktor for laktatnivåe
 
 I molekylærbiologiske laboratorier er analyse av DNA og RNA essensielt for mange eksperimenter. I denne delen av oppgaven skal vi fokusere på to sentrale aspekter: forutsigelse av størrelsen på PCR-amplifiserte DNA-fragmenter og beregning av helling på en qPCR kalibreringskurve.
 
+```{r}
+knitr::include_graphics("bilde_DNA.jpg")
+```
+
+
 ## Formål
 
 Målet er å analysere DNA-fragmenter eller qPCR-resultater for å bestemme størrelse eller effektivitet. For DNA-fragmenter vil du bruke verktøy som Image J og R for å forutsi størrelsen på fragmentene.
@@ -402,10 +401,7 @@ Når man sier at et DNA-fragment er 129 basepar langt, betyr det at det består 
 I denne delen skal vi analysere og tolke en regresjonstabell ved hjelp av hypertrofi-datasettet. Ved å velg en lineær relasjon mellom to variabler i datasettet, som kan være relatert til muskelstørrelse og styrke, to molekylære markører, eller andre relevante variabler.
 
 ```{r}
-#| warning: false
-#| message: false
-#| echo: false
-#| 
+
 # Last inn datasettet hypertrophy
 data("hypertrophy", package = "exscidata")
 
@@ -420,9 +416,7 @@ Bruker en enkel lineær regresjon for å analysere forholdet mellom BICEPS_T1 (u
 
 
 ```{r}
-#| echo: false   # Skjuler koden, men resultatene vil vises
-#| message: false   # Skjuler pakke-meldinger
-#| warning: false   # Skjuler advarsler
+
 
 ## Laster inn nødvendig bibliotek
 library(dplyr)
