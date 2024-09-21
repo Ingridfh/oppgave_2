@@ -55,7 +55,27 @@ div.sourceCode
 @media screen {
 pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="Studentoppgave_nr2_files/libs/clipboard/clipboard.min.js"></script>
@@ -158,7 +178,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h1>Assignment 1</h1>
 <section id="introduksjon" class="level2">
 <h2 class="anchored" data-anchor-id="introduksjon">Introduksjon</h2>
-<p>I denne delen skal vi utforske hvordan man kan fange den fysiologiske essensen av melkesyreterskeltesten. En vanlig metode for å analysere forholdet mellom treningsintensitet og blodmelkesyre er å bestemme intensiteten ved faste blodmelkesyrenivåer. Dette kan oppnås ved å bruke en regresjonsmodell for å beskrive forholdet, og deretter utføre en “invers prediksjon” av treningsintensiteten.</p>
+<p>I denne delen skal vi utforske hvordan man kan fange den fysiologiske essensen av melkesyreterskeltesten. En vanlig metode for å analysere forholdet mellom treningsintensitet og blodmelkesyre er å bestemme intensiteten ved faste blodmelkesyrenivåer. Dette kan oppnås ved å bruke en regresjonsmodell for å beskrive forholdet, og deretter utføre en “invers prediksjon” av treningsintensiteten. <span class="citation" data-cites="tanner2012">Tanner and Gore (<a href="#ref-tanner2012" role="doc-biblioref">2012</a>)</span></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Vis/skjul kode</summary>
@@ -570,7 +590,7 @@ F-statistic: 0.9711 on 1 and 46 DF,  p-value: 0.3296</code></pre>
 </section>
 <section id="introduksjon-1" class="level2">
 <h2 class="anchored" data-anchor-id="introduksjon-1">Introduksjon</h2>
-<p>I molekylærbiologiske laboratorier er analyse av DNA og RNA essensielt for mange eksperimenter. I denne delen av oppgaven skal vi fokusere på to sentrale aspekter: forutsigelse av størrelsen på PCR-amplifiserte DNA-fragmenter og beregning av helling på en qPCR kalibreringskurve.</p>
+<p>I molekylærbiologiske laboratorier er analyse av DNA og RNA essensielt for mange eksperimenter. I denne delen av oppgaven skal vi fokusere på to sentrale aspekter: forutsigelse av størrelsen på PCR-amplifiserte DNA-fragmenter og beregning av helling på en qPCR kalibreringskurve. <span class="citation" data-cites="schadock2015simple">(<a href="#ref-schadock2015simple" role="doc-biblioref">Schadock et al. 2015</a>)</span></p>
 <div class="cell">
 <details class="code-fold">
 <summary>Vis/skjul kode</summary>
@@ -761,10 +781,18 @@ F-statistic: 13.43 on 1 and 28 DF,  p-value: 0.001026</code></pre>
 <section id="konklusjon-2" class="level2">
 <h2 class="anchored" data-anchor-id="konklusjon-2">Konklusjon</h2>
 <p>Regresjonsanalysen viser at det er en signifikant positiv sammenheng mellom BICEPS_T1 og SQUAT_3RM. For hver enhet økning i BICEPS_T1, forventes SQUAT_3RM å øke med omtrent 20.434 enheter. Modellen gir en moderat forklaring av variasjonen i styrke, men det er fortsatt andre faktorer som påvirker styrken som ikke er inkludert i denne modellen.</p>
+
 </section>
 </section>
 
-</main>
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-schadock2015simple" class="csl-entry" role="listitem">
+Schadock, Ines, Augusto Schneider, Elton Dias Silva, Marcia Rubia Duarte Buchweitz, Marcio Nunes Correa, Joao Bosco Pesquero, Edgar Julian Paredes-Gamero, Ronaldo Carvalho Araujo, and Carlos Castilho Barros. 2015. <span>“Simple Method to Genotype the ACTN3 R577x Polymorphism.”</span> <em>Genetic Testing and Molecular Biomarkers</em> 19 (4): 253–57. <a href="https://doi.org/10.1089/gtmb.2014.0299">https://doi.org/10.1089/gtmb.2014.0299</a>.
+</div>
+<div id="ref-tanner2012" class="csl-entry" role="listitem">
+Tanner, R. K., and C. J. Gore. 2012. <em>Physiological Tests for Elite Athletes</em>. 2nd ed. Human Kinetics. <a href="https://books.google.no/books?id=0OPIiMks58MC">https://books.google.no/books?id=0OPIiMks58MC</a>.
+</div>
+</div></section></div></main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {

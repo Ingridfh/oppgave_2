@@ -26,13 +26,14 @@ message: false
 warning: false
 editor_options: 
   chunk_output_type: console
+bibliography: referanser.bib
 ---
 
 # Assignment 1
 
 ## Introduksjon
 
-I denne delen skal vi utforske hvordan man kan fange den fysiologiske essensen av melkesyreterskeltesten. En vanlig metode for å analysere forholdet mellom treningsintensitet og blodmelkesyre er å bestemme intensiteten ved faste blodmelkesyrenivåer. Dette kan oppnås ved å bruke en regresjonsmodell for å beskrive forholdet, og deretter utføre en "invers prediksjon" av treningsintensiteten.
+I denne delen skal vi utforske hvordan man kan fange den fysiologiske essensen av melkesyreterskeltesten. En vanlig metode for å analysere forholdet mellom treningsintensitet og blodmelkesyre er å bestemme intensiteten ved faste blodmelkesyrenivåer. Dette kan oppnås ved å bruke en regresjonsmodell for å beskrive forholdet, og deretter utføre en "invers prediksjon" av treningsintensiteten. @tanner2012
 
 
 
@@ -326,7 +327,7 @@ Disse resultatene indikerer at VO2.225 ikke er en god prediktor for laktatnivåe
 
 ## Introduksjon
 
-I molekylærbiologiske laboratorier er analyse av DNA og RNA essensielt for mange eksperimenter. I denne delen av oppgaven skal vi fokusere på to sentrale aspekter: forutsigelse av størrelsen på PCR-amplifiserte DNA-fragmenter og beregning av helling på en qPCR kalibreringskurve.
+I molekylærbiologiske laboratorier er analyse av DNA og RNA essensielt for mange eksperimenter. I denne delen av oppgaven skal vi fokusere på to sentrale aspekter: forutsigelse av størrelsen på PCR-amplifiserte DNA-fragmenter og beregning av helling på en qPCR kalibreringskurve. [@schadock2015simple]
 
 ```{r}
 knitr::include_graphics("bilde_DNA.jpg")
